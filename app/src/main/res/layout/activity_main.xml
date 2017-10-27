@@ -4,23 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.scryptonite.prateek.habba18_meeting.MainActivity">
+    tools:context="com.scryptonite.prateek.habba18_meeting.MainActivity"
+    android:orientation="vertical">
 
 
-    <WebView
-        android:id="@+id/webview"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+        </WebView>
+
+    </LinearLayout>
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true" >
+        android:layout_gravity="center_horizontal|center|clip_vertical"
+        android:gravity="center">
 
         <ProgressBar
-            android:id="@+id/progressBar"
+            android:id="@+id/progressBar2"
             style="?android:attr/progressBarStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_x="171dp"
-            android:layout_y="221dp" />
-    </WebView>
+            android:foregroundGravity="center" />
+
+    </RelativeLayout>
+
+
 </RelativeLayout>
